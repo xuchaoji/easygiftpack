@@ -6,7 +6,8 @@ public class EasyGiftPack extends JavaPlugin {
 	//enable
 	@Override
 	public void onEnable() {
-		
+		//register command
+		this.getCommand("egp").setExecutor(new CommandOfEGP());
 	}
 	//disable
 	@Override
