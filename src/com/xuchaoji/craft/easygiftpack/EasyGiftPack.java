@@ -8,6 +8,8 @@ public class EasyGiftPack extends JavaPlugin {
 	public void onEnable() {
 		//register command
 		this.getCommand("egp").setExecutor(new CommandOfEGP());
+		//register listener
+		getServer().getPluginManager().registerEvents(new ListenerOfEGP(), this);
 	}
 	//disable
 	@Override
